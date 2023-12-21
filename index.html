@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device width, initial scale-1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9c0bdef34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Sophomore student at SRMIST</p>
+            <h1>Hi, I'm <span>Samiksha</span><br>from India</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.PNG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Samiksha, currently pursuing my Bachelors in Computer Sceince at SRM Institute of Science and Technology, KTR.  I'm an avid and ambitious student with a hunger for knowledge and a thirst for personal growth. My academic journey is a tapestry of curiosity and determination.
+                    I believe that education is a lifelong journey, and I'm excited about the opportunities and challenges that lie ahead. 
+                    I'm committed to making the most of every moment in my academic pursuit.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Coding languages</span><br>C, Java, Python, C++</li>
+                            <li><span>Web development</span><br>Front-end web development</li>
+                            <li><span>App development</span><br>Designing app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Graduated high school from NPS International, Chennai</li>
+                            <li><span>2022-2026</span><br>Under-graduate from SRMIST KTR.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>AWS Academy Graduate</span><br>Cloud Foundations, Cloud Architecture</li>
+                            <li><span>Meta Front-End Development</span><br>Introduction to Front-end development</li>
+                            <li><span>Coursera Project Network</span><br>SEO with Squarespace</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internships">
+                        <ul>
+                            <li><span>Sep-Nov 2023</span><br>Cloud Virtual Internship supported by AWS Academy, AICTE.</li>
+                            <li><span>Sep-Nov 2023</span><br>Data Science Internship with BrainOvision Solution Pvt. Ltd.</li>
+                            <li><span>Nov 2023-ongoing</span><br>App Development Internship with Bharat Intern Pvt. Ltd.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>dsfgbzsdigufuhgui</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>ui/ux design</h2>
+                <p>dsfgbzsdigufuhgui</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>app design</h2>
+                <p>dsfgbzsdigufuhgui</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>This C progarmming project has been completed in the first semester for the course Programming for Problem Solving. It is a computerized system which helps user to manage the 
+                        library daily activity in electronic format. It helps user to manage the transaction/record more effectively and timesaving. The system helps both students and library manager 
+                        to keeps a constant track of all the available books. This system allows smooth flow of library activities by removing chances of errors in the details.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Phone Book Management System</h3>
+                    <p>This C++ progarmming project has been completed in the second semester for the course Object Oriented Design and Programming. This project has been developed and deisgned for a software
+                        application that allows user to effectively manage their contacts in a digital format. The primary goal is to provide a user-friendly interface that enables user to easily add, edit, delete,
+                        and search for contacts. This project is equipped with enhanced user productivity, increased data security, demostrate proficiency in software development and improved accuracy.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Hangman Gaming</h3>
+                    <p>This Java progarmming project has been completed in the third semester for the course Advanced Programming Practice. The carefully crafted functional requirements ensure that players 
+                        experience the thrill of uncovering a mystery word, racing against time while grappling with the limited number of guesses. The Hangman Gaming Project stands as a testament to the enduring 
+                        appeal of word games, transcending generations and providing an entertaining, intellectual challenge. The 3-minute timer and 10-guess limit add an exhilarating dimension, making each 
+                        word-guessing session a race against time and an exercise in strategic thinking.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+        
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> ss6632@srmist.edu.in</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9962589093</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/s-samiksha-891b5428b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61551554986212"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/_.ssamiksha_?igshid=dzBnc240MjJkNnM4"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/ssamiksha009"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Samiksha <i class="fa-regular fa-registered"></i> </p>
+    </div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+</body>
+</html>
